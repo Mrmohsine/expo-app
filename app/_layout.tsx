@@ -15,8 +15,8 @@ export default function RootLayout() {
           tabBarInactiveTintColor: 'gray',
           tabBarStyle: {
             backgroundColor: '#001E52',
-            height: 60,
-            paddingBottom: 5,
+            height: 70,
+            paddingTop: 10,
           },
         }}>
         

@@ -1,0 +1,57 @@
+// app/logout.tsx
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
+
+export default function Logout() {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    // Add your logout logic here
+    console.log('Logging out...');
+    router.push('/');
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Déconnexion</Text>
+      <Text style={styles.subtitle}>Êtes-vous sûr de vouloir vous déconnecter ?</Text>
+      
+      <TouchableOpacity style={styles.button} onPress={handleLogout}>
+        <Text style={styles.buttonText}>Confirmer la déconnexion</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 12,
+    color: '#001E52',
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#6b7280',
+    marginBottom: 32,
+    textAlign: 'center',
+  },
+  button: {
+    backgroundColor: '#dc2626',
+    paddingHorizontal: 32,
+    paddingVertical: 16,
+    borderRadius: 12,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+});

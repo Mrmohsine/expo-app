@@ -1,0 +1,12 @@
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import ArchainVerifyScreen from './components/ArchainVerifyScreen';
+
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <ArchainVerifyScreen />
+      <StatusBar style="light" />
+    </SafeAreaProvider>
+  );
+}

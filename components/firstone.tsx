@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   mainTitle: {
     paddingTop: 20,
     textAlign: 'center',
-    fontSize: 48,
+    fontSize: 44,
     fontWeight: 'bold',
     lineHeight: 30,
     color: 'white',
